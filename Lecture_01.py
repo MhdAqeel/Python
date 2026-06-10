@@ -80,3 +80,11 @@ print("9.in a circle radius is 7, find the area")
 radius=7
 import math
 print(math.pi*radius*radius)
+
+>>> from decimal import Decimal
+>>> Decimal(0.1)+Decimal(0.3)
+Decimal('0.3999999999999999944488848769')
+>>> Decimal('0.1')+Decimal('0.3')
+Decimal('0.4')
+
+
