@@ -6,8 +6,8 @@ C:\Users\dcsuser>my_env\Scripts\activate
 
 (my_env) C:\Users\dcsuser>python
 
->>> print(range(0,21,2))                  #prit the even numbers from 0 to 20
-range(0, 21, 2)
+>>> list(range(0,21,2))                  #prit the even numbers from 0 to 20
+[2,4,6,8,10,12,14,16,18,20]
 
 #first five chareecters of 'PROGRAMMIG'
 >>> s="programming"
