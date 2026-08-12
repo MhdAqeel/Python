@@ -66,7 +66,7 @@ def needleman_wunsch(seq1, seq2, match_score=1, mismatch_penalty=-1, gap_penalty
 
 
 def print_matrix(matrix, seq1, seq2):
-    print("      ", end="")
+    print("         ", end="")
     for char in seq2:
         print(f"{char:4}", end="")
     print()
