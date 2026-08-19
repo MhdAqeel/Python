@@ -52,17 +52,7 @@ def smith_waterman(seq1, seq2, match_score=1, mismatch_penalty=-1, gap_penalty=-
             aligned_seq2 = seq2[j - 1] + aligned_seq2
             j -= 1
 
-    while i > 0:
-        aligned_seq1 = seq1[i - 1] + aligned_seq1
-        aligned_seq2 = "-" + aligned_seq2
-        i -= 1
-
-    while j > 0:
-        aligned_seq1 = "-" + aligned_seq1
-        aligned_seq2 = seq2[j - 1] + aligned_seq2
-        j -= 1
-
-    return aligned_seq1, aligned_seq2, score_matrix[m][n], score_matrix
+    return aligned_seq1, aligned_seq2, largest_score, score_matrix
 
 
 def print_matrix(matrix, seq1, seq2):
